@@ -1,15 +1,17 @@
 
 #program to encode seed phrases
 #this algorithm will be simple, just shift each character forward by two characters e.g a -> c and b -> d etc
-#this simplicity comes with the inherent risk that it's easy to crack, a list of all possible seedphrase words
-#(which I assume isn't a lot), one foor loop and a few minutes to kill. Right?
+#this simplicity comes with the inherent risk that it's easy to crack, 
+#a list of all possible seedphrase words - 2048
+#one foor loop and a few minutes to kill is all it'll take but here goes
 
-#  this algorithm should accep input
+import string
+
+#  this algorithm should accept input
 seed_phrase = input("enter seedphrase: ")
 new_seed = ""
 
 #and encode each word
-import string
 alphabets = list(string.ascii_lowercase)
 a_to_x = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x"]
 
