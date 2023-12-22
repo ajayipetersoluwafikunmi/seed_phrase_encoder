@@ -1,11 +1,11 @@
 #the seed phrase decoder-inator
+import string
 
 #this program should accept encoded seedphrases
 seed_phrase = input("enter endoded seedphrase: ")
 new_seed = ""
 
 #and decode each word
-import string
 alphabets = list(string.ascii_lowercase)
 a_to_x = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x"]
 
